@@ -41,10 +41,10 @@
 
     
     <div class="container mt-3">
-      <h3>Contato</h3>
+      <h3>Cadastro</h3>
       <form class="row g-3">
 
-        <div class="col-md-7 col-sm-12">
+        <div class="col-md-6 col-sm-12">
           <div class="form-floating">
             <input
               type="text"
@@ -58,20 +58,65 @@
           </div>
         </div>
 
-        <div class="col-md-5 col-sm-12">
+        <div class="col-md-3 col-sm-12">
           <div class="form-floating">
             <input
-              type="email"
-              name="email"
-              id="email"
+              type="number"
+              name="valor" 
+              id="valor"
+              step="0.5"
               class="form-control"
-              placeholder="E-mail"
+              placeholder="Valor"
               required
             />
-            <label for="email">E-mail</label>
+            <label for="valor">Valor</label>
           </div>
         </div>
 
+        <div class="col-md-3 col-sm-12">
+          <div class="form-floating">
+            <input
+              type="number"
+              name="quantidade" 
+              id="quantidade"
+              class="form-control"
+              placeholder="Quantidade"
+              required
+            />
+            <label for="quantidade">Quantidade</label>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="form-floating">
+            <select name="categoria" id="categoria" class="form-select" required>
+              <option value="" selected disabled>Selecione</option>
+              <option value="frontend">Cordofones (cordas)</option>
+              <option value="backend">Aerofones (sopros)</option>
+              <option value="frontend">Membranofones (membrana)</option>
+              <option value="backend">Idiofones (corpo próprio)</option>
+            </select>
+            <label for="categoria">Categoria</label>
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-12"> 
+          <label class="form-label d-block">Fabricado em</label>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="tipo" id="aluno" class="form-check-input">
+            <label for="aluno" class="form-check-label">SP</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="tipo" id="aluno" class="form-check-input">
+            <label for="aluno" class="form-check-label">RJ</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" name="tipo" id="professor" class="form-check-input">
+            <label for="professor" class="form-check-label">MG</label>
+          </div>
+        </div>
+
+<!-- 
         <div class="col-md-4 col-sm-12">
           <div class="form-floating">
             <input
@@ -114,7 +159,7 @@
             <input type="radio" name="tipo" id="professor" class="form-check-input">
             <label for="professor" class="form-check-label">Professor</label>
           </div>
-        </div>
+        </div> -->
 
         <div class="col-md-12 col-sm-12">
           <div class="form-check">
